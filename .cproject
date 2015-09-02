@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.arm.eclipse.build.config.baremetal.exe.debug.1666014643">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.arm.eclipse.build.config.baremetal.exe.debug.1666014643" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.arm.eclipse.builder.armcc.error" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="clean" description="" id="com.arm.eclipse.build.config.baremetal.exe.debug.1666014643" name="Debug" parent="com.arm.eclipse.build.config.baremetal.exe.debug.1666014643">
+					<folderInfo id="com.arm.eclipse.build.config.baremetal.exe.debug.1666014643." name="/" resourcePath="">
+						<toolChain id="com.arm.toolchain.baremetal.base.var.arm_compiler_5-5.3.999888016" name="ARM Compiler 5.03" superClass="com.arm.toolchain.baremetal.base.var.arm_compiler_5-5.3">
+							<targetPlatform id="com.arm.toolchain.baremetal.base.var.arm_compiler_5-5.3.999888016.1162545353" name=""/>
+							<builder buildPath="${workspace_loc:/STM32F10x_Templet}/Debug" id="org.eclipse.cdt.build.core.internal.builder.1107461090" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="org.eclipse.cdt.build.core.internal.builder"/>
+							<tool id="com.arm.tool.c.compiler.base.var.arm_compiler_5-5.3.268596775" name="ARM C Compiler 5.3" superClass="com.arm.tool.c.compiler.base.var.arm_compiler_5-5.3">
+								<option id="com.arm.tool.c.compiler.option.optlevel.379724137" name="Optimization level" superClass="com.arm.tool.c.compiler.option.optlevel"/>
+								<option id="com.arm.tool.c.compiler.option.incpath.555156708" name="Include path (-I)" superClass="com.arm.tool.c.compiler.option.incpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/startup}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/System}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/User}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/STM32F10x_StdPeriph_Driver/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CMSIS}&quot;"/>
+								</option>
+								<option id="com.arm.tool.c.compiler.option.targetcpu.517440080" name="Target CPU (--cpu)" superClass="com.arm.tool.c.compiler.option.targetcpu" value="Cortex-M3" valueType="string"/>
+								<option id="com.arm.tool.c.compiler.option.inter.897118328" name="Interworking (--apcs=/interwork)" superClass="com.arm.tool.c.compiler.option.inter" value="true" valueType="boolean"/>
+								<option id="com.arm.tool.c.compiler.option.defmac.958217888" name="Define macro (-D)" superClass="com.arm.tool.c.compiler.option.defmac" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__CC_ARM=1"/>
+									<listOptionValue builtIn="false" value="STM32F10X_MD "/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+								</option>
+								<inputType id="com.arm.tool.c.compiler.input.1462237088" superClass="com.arm.tool.c.compiler.input"/>
+								<inputType id="com.arm.tool.cpp.compiler.input.1734802908" superClass="com.arm.tool.cpp.compiler.input"/>
+							</tool>
+							<tool id="com.arm.tool.cpp.compiler.base.var.arm_compiler_5-5.3.214670717" name="ARM C++ Compiler 5.3" superClass="com.arm.tool.cpp.compiler.base.var.arm_compiler_5-5.3">
+								<option id="com.arm.tool.c.compiler.option.optlevel.421520294" name="Optimization level" superClass="com.arm.tool.c.compiler.option.optlevel"/>
+							</tool>
+							<tool id="com.arm.tool.assembler.base.var.arm_compiler_5-5.3.1772910249" name="ARM Assembler 5.3" superClass="com.arm.tool.assembler.base.var.arm_compiler_5-5.3">
+								<option id="com.arm.tool.assembler.option.cpu.1642065829" name="Target CPU (--cpu)" superClass="com.arm.tool.assembler.option.cpu" value="Cortex-M3" valueType="string"/>
+								<option id="com.arm.tool.assembler.option.inter.585019869" name="Interworking (--apcs=/interwork)" superClass="com.arm.tool.assembler.option.inter" value="true" valueType="boolean"/>
+							</tool>
+							<tool id="com.arm.tool.c.linker.base.var.arm_compiler_5-5.3.1604670621" name="ARM Linker 5.3" superClass="com.arm.tool.c.linker.base.var.arm_compiler_5-5.3">
+								<option id="com.arm.tool.c.linker.option.cpu.1096455715" name="Target CPU (--cpu)" superClass="com.arm.tool.c.linker.option.cpu" value="Cortex-M3" valueType="string"/>
+								<option id="com.arm.tool.c.linker.option.scatter.23762355" name="Scatter file (--scatter)" superClass="com.arm.tool.c.linker.option.scatter" value="${workspace_loc:/${ProjName}/User}\Templet.scat" valueType="string"/>
+							</tool>
+							<tool id="com.arm.tool.librarian.base.var.arm_compiler_5-5.3.532583886" name="ARM Librarian 5.3" superClass="com.arm.tool.librarian.base.var.arm_compiler_5-5.3"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="startup/startup|startup/startup/arm/startup_stm32f10x_hd_vl.s|startup/startup/arm/startup_stm32f10x_hd.s|startup/startup/arm/startup_stm32f10x_ld_vl.s|startup/startup/arm/startup_stm32f10x_ld.s|startup/startup/arm/startup_stm32f10x_md_vl.s|startup/startup/arm/startup_stm32f10x_xl.s|startup/startup/arm/startup_stm32f10x_cl.s|startup/startup/gcc_ride7|startup/startup/TrueSTUDIO|startup/startup/iar|startup/startup/iar/startup_stm32f10x_cl.s|User" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="User"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.arm.eclipse.build.config.baremetal.exe.release.2048880047">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.arm.eclipse.build.config.baremetal.exe.release.2048880047" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.arm.eclipse.builder.armcc.error" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="clean" description="" id="com.arm.eclipse.build.config.baremetal.exe.release.2048880047" name="Release" parent="com.arm.eclipse.build.config.baremetal.exe.release.2048880047">
+					<folderInfo id="com.arm.eclipse.build.config.baremetal.exe.release.2048880047." name="/" resourcePath="">
+						<toolChain id="com.arm.toolchain.baremetal.base.var.arm_compiler_5-5.3.685752537" name="ARM Compiler 5.03" superClass="com.arm.toolchain.baremetal.base.var.arm_compiler_5-5.3">
+							<targetPlatform id="com.arm.toolchain.baremetal.base.var.arm_compiler_5-5.3.685752537.1902314594" name=""/>
+							<builder buildPath="${workspace_loc:/STM32F10x_Templet}/Release" id="org.eclipse.cdt.build.core.internal.builder.1082894141" keepEnvironmentInBuildfile="false" name="CDT Internal Builder" superClass="org.eclipse.cdt.build.core.internal.builder"/>
+							<tool id="com.arm.tool.c.compiler.base.var.arm_compiler_5-5.3.1037661366" name="ARM C Compiler 5.3" superClass="com.arm.tool.c.compiler.base.var.arm_compiler_5-5.3">
+								<option id="com.arm.tool.c.compiler.option.optlevel.1192013734" name="Optimization level" superClass="com.arm.tool.c.compiler.option.optlevel" value="com.arm.tool.c.compiler.option.optlevel.restrict" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.option.targetcpu.347443771" name="Target CPU (--cpu)" superClass="com.arm.tool.c.compiler.option.targetcpu" value="Cortex-M3" valueType="string"/>
+								<option id="com.arm.tool.c.compiler.option.defmac.1254094314" name="Define macro (-D)" superClass="com.arm.tool.c.compiler.option.defmac" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__CC_ARM=1"/>
+									<listOptionValue builtIn="false" value="STM32F10X_MD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+								</option>
+								<option id="com.arm.tool.c.compiler.options.debug.enabled.1023955899" name="Enable debug (-g)" superClass="com.arm.tool.c.compiler.options.debug.enabled" value="false" valueType="boolean"/>
+								<option id="com.arm.tool.c.compiler.option.incpath.878811773" name="Include path (-I)" superClass="com.arm.tool.c.compiler.option.incpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/CMSIS}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/startup}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/STM32F10x_StdPeriph_Driver/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/System}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/User}&quot;"/>
+								</option>
+								<inputType id="com.arm.tool.c.compiler.input.803653653" superClass="com.arm.tool.c.compiler.input"/>
+								<inputType id="com.arm.tool.cpp.compiler.input.1084762630" superClass="com.arm.tool.cpp.compiler.input"/>
+							</tool>
+							<tool id="com.arm.tool.cpp.compiler.base.var.arm_compiler_5-5.3.735495759" name="ARM C++ Compiler 5.3" superClass="com.arm.tool.cpp.compiler.base.var.arm_compiler_5-5.3">
+								<option id="com.arm.tool.c.compiler.option.optlevel.2123710814" name="Optimization level" superClass="com.arm.tool.c.compiler.option.optlevel" value="com.arm.tool.c.compiler.option.optlevel.high" valueType="enumerated"/>
+							</tool>
+							<tool id="com.arm.tool.assembler.base.var.arm_compiler_5-5.3.1674286662" name="ARM Assembler 5.3" superClass="com.arm.tool.assembler.base.var.arm_compiler_5-5.3">
+								<option id="com.arm.tool.assembler.option.cpu.1535509600" name="Target CPU (--cpu)" superClass="com.arm.tool.assembler.option.cpu" value="Cortex-M3" valueType="string"/>
+								<option id="com.arm.tool.assembler.option.debug.1708099636" name="Enable debug (-g)" superClass="com.arm.tool.assembler.option.debug" value="false" valueType="boolean"/>
+							</tool>
+							<tool id="com.arm.tool.c.linker.base.var.arm_compiler_5-5.3.1156672838" name="ARM Linker 5.3" superClass="com.arm.tool.c.linker.base.var.arm_compiler_5-5.3">
+								<option id="com.arm.tool.c.linker.option.cpu.569818020" name="Target CPU (--cpu)" superClass="com.arm.tool.c.linker.option.cpu" value="Cortex-M3" valueType="string"/>
+								<option id="com.arm.tool.c.linker.option.scatter.1322250486" name="Scatter file (--scatter)" superClass="com.arm.tool.c.linker.option.scatter" value="${workspace_loc:/${ProjName}/User}\Templet.scat" valueType="string"/>
+							</tool>
+							<tool id="com.arm.tool.librarian.base.var.arm_compiler_5-5.3.1045070661" name="ARM Librarian 5.3" superClass="com.arm.tool.librarian.base.var.arm_compiler_5-5.3"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="startup/startup/arm/startup_stm32f10x_xl.s|startup/startup/arm/startup_stm32f10x_md_vl.s|startup/startup/arm/startup_stm32f10x_ld.s|startup/startup/arm/startup_stm32f10x_ld_vl.s|startup/startup/arm/startup_stm32f10x_hd.s|startup/startup/arm/startup_stm32f10x_hd_vl.s|startup/startup/arm/startup_stm32f10x_cl.s|startup/startup/TrueSTUDIO|startup/startup/iar|startup/startup/gcc_ride7|User" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="User"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="test2.com.arm.eclipse.build.project.baremetal.exe.1025551541" name="Executable"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/STM32F10x_Templet"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/STM32F10x_Templet"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>
