@@ -18,6 +18,7 @@
 								<option id="com.arm.tool.c.compiler.option.optlevel.379724137" name="Optimization level" superClass="com.arm.tool.c.compiler.option.optlevel"/>
 								<option id="com.arm.tool.c.compiler.option.incpath.555156708" name="Include path (-I)" superClass="com.arm.tool.c.compiler.option.incpath" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/startup}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Drive}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/System}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/User}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/STM32F10x_StdPeriph_Driver/inc}&quot;"/>
@@ -30,6 +31,7 @@
 									<listOptionValue builtIn="false" value="STM32F10X_MD "/>
 									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
 								</option>
+								<option id="com.arm.tool.c.compiler.option.flags.477876644" name="Other flags" superClass="com.arm.tool.c.compiler.option.flags" value="--c99" valueType="string"/>
 								<inputType id="com.arm.tool.c.compiler.input.1462237088" superClass="com.arm.tool.c.compiler.input"/>
 								<inputType id="com.arm.tool.cpp.compiler.input.1734802908" superClass="com.arm.tool.cpp.compiler.input"/>
 							</tool>
@@ -48,7 +50,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="startup/startup|startup/startup/arm/startup_stm32f10x_hd_vl.s|startup/startup/arm/startup_stm32f10x_hd.s|startup/startup/arm/startup_stm32f10x_ld_vl.s|startup/startup/arm/startup_stm32f10x_ld.s|startup/startup/arm/startup_stm32f10x_md_vl.s|startup/startup/arm/startup_stm32f10x_xl.s|startup/startup/arm/startup_stm32f10x_cl.s|startup/startup/gcc_ride7|startup/startup/TrueSTUDIO|startup/startup/iar|startup/startup/iar/startup_stm32f10x_cl.s|User" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="System/delay.c|System/usart.c|Drive/MPU6050.c|startup/startup|startup/startup/arm/startup_stm32f10x_hd_vl.s|startup/startup/arm/startup_stm32f10x_hd.s|startup/startup/arm/startup_stm32f10x_ld_vl.s|startup/startup/arm/startup_stm32f10x_ld.s|startup/startup/arm/startup_stm32f10x_md_vl.s|startup/startup/arm/startup_stm32f10x_xl.s|startup/startup/arm/startup_stm32f10x_cl.s|startup/startup/gcc_ride7|startup/startup/TrueSTUDIO|startup/startup/iar|startup/startup/iar/startup_stm32f10x_cl.s|User" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="User"/>
 					</sourceEntries>
 				</configuration>
@@ -102,7 +104,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="startup/startup/arm/startup_stm32f10x_xl.s|startup/startup/arm/startup_stm32f10x_md_vl.s|startup/startup/arm/startup_stm32f10x_ld.s|startup/startup/arm/startup_stm32f10x_ld_vl.s|startup/startup/arm/startup_stm32f10x_hd.s|startup/startup/arm/startup_stm32f10x_hd_vl.s|startup/startup/arm/startup_stm32f10x_cl.s|startup/startup/TrueSTUDIO|startup/startup/iar|startup/startup/gcc_ride7|User" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="System/delay.c|System/usart.c|Drive/MPU6050.c|startup/startup/arm/startup_stm32f10x_xl.s|startup/startup/arm/startup_stm32f10x_md_vl.s|startup/startup/arm/startup_stm32f10x_ld.s|startup/startup/arm/startup_stm32f10x_ld_vl.s|startup/startup/arm/startup_stm32f10x_hd.s|startup/startup/arm/startup_stm32f10x_hd_vl.s|startup/startup/arm/startup_stm32f10x_cl.s|startup/startup/TrueSTUDIO|startup/startup/iar|startup/startup/gcc_ride7|User" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="User"/>
 					</sourceEntries>
 				</configuration>
@@ -126,4 +128,5 @@
 		</configuration>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>
